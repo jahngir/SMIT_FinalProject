@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jahngir/SMIT_FinalProject/static/css/main.731d8341.css",
+    "main.js": "/jahngir/SMIT_FinalProject/static/js/main.407eceec.js",
+    "index.html": "/jahngir/SMIT_FinalProject/index.html",
+    "main.731d8341.css.map": "/jahngir/SMIT_FinalProject/static/css/main.731d8341.css.map",
+    "main.407eceec.js.map": "/jahngir/SMIT_FinalProject/static/js/main.407eceec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.731d8341.css",
+    "static/js/main.407eceec.js"
+  ]
+}
