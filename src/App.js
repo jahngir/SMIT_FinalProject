@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, Link } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 
-function App() {
+import Container from 'react-bootstrap/Container';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div ClassName="new">
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="/">SMIT</Navbar.Brand>
+          <Nav >
+            
+            <Nav.Link  href="/">Home</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/signup">SignUp</Nav.Link>
+            <Nav.Link href="/course">Courses</Nav.Link>
+            </Nav>
+            </Container>
+            </Navbar>
+            <div className="d-grid gap-2">
+              <Button href="/feeds" variant="primary" size="lg">
+                Show Posts
+                </Button></div>
+  
 
-export default App;
+      <Outlet />
+      
+</div>
+    
+    )
+};
+
+export default Home;
+
+//nav
+
