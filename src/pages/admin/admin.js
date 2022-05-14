@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../loginsignup/firebase";
 
 
-const Answers = () => {
+const Admin = () => {
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
 
@@ -41,4 +41,4 @@ const Answers = () => {
   );
 };
 
-export default Answers;
+export default Admin;
